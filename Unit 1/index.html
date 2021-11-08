@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/button.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" id="holder" style="padding: 50px;">
+    </div>
+  
+    <script type="module">
+      import StepSlider from './slider.js';
+  
+      let stepSlider = new StepSlider({
+        steps: 5
+      });
+  
+      holder.append(stepSlider.elem);
+  
+      holder.addEventListener('slider-change', (event) => console.log(event));
+    </script>
+  </body>
+</html>   
